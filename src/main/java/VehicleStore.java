@@ -1,7 +1,10 @@
 import products.Product;
 import vehicles.*;
+import vehicles.air.PrivateJet;
 import vehicles.land.Bicycle;
 import vehicles.land.Car;
+import vehicles.water.Kayak;
+import vehicles.water.Speedboat;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +24,7 @@ public class VehicleStore {
 
         // create a car using composition, and call methods from its multiple components
         Car car1 = new Car(200, 120, new Product("2015 Dacia Duster", 10000, 3),
-        new Engine(100, 150));
+                new Engine(100, 150));
         vehicles.add(car1);
 
         car1.startEngine();
@@ -30,5 +33,10 @@ public class VehicleStore {
 
         // lab tests (water vehicle related)...
 
+        Speedboat speedboat = new Speedboat(250, 140, new Product("2023 G-Dawg", 2000, 2),
+                "V-Shaped Hull", new Motor(500, 600));
+        speedboat.startEngine();
     }
+
+
 }

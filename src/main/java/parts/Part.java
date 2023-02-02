@@ -2,7 +2,7 @@ package parts;
 
 import products.IProduct;
 
-public final class Part implements IPart {
+public abstract class Part implements IPart {
     private String manufacturer;
     private long partNumber;
     private IProduct baseProduct;
@@ -12,7 +12,6 @@ public final class Part implements IPart {
         this.partNumber = partNumber;
         this.baseProduct = baseProduct;
     }
-
 
     @Override
     public String getManufacturer() {

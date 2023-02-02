@@ -51,7 +51,7 @@ public final class Kayak extends Vehicle implements IWaterVehicle {
     @Override
     public void removeInventory(long amount) throws Exception {
         this.baseProduct.removeInventory(amount);
-    } // do we need an if statement here?
+    }
 
     @Override
     public float getWeight() {
