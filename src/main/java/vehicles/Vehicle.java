@@ -4,9 +4,9 @@ import products.IProduct;
 
 public abstract class Vehicle implements IVehicle {
 
-    private float weight;
-    private int maxSpeed;
-    private IProduct baseProduct;
+    protected float weight;
+    protected int maxSpeed;
+    protected IProduct baseProduct;
 
     public Vehicle(float weight, int maxSpeed, IProduct baseProduct) {
         this.weight = weight;

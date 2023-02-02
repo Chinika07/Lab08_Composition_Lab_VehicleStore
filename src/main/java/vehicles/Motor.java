@@ -12,12 +12,12 @@ public class Motor implements IMotorised {
 
      @Override
      public void startEngine() {
-         System.out.println("Turning on motor. Let's go explore the big blue!");
+         System.out.println("puh-puh-puh");
      }
 
      @Override
      public void stopEngine() {
-         System.out.println("Turning off motor. Let's just enjoy the sun and sea for a while.");
+         System.out.println("Kaput.");
      }
 
      @Override

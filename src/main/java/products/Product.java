@@ -1,5 +1,7 @@
 package products;
 
+import products.IProduct;
+
 public final class Product implements IProduct {
     private float price;
     private long inventory;

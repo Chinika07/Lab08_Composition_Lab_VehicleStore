@@ -14,63 +14,63 @@ public final class Kayak extends Vehicle implements IWaterVehicle {
 
     @Override
     public float getPrice() {
-        return this.getPrice();
+        return this.baseProduct.getPrice();
     }
 
     @Override
     public long getInventory() {
-        return this.getInventory();
+        return this.baseProduct.getInventory();
     }
 
     @Override
     public void setPrice(float price) {
-        this.setPrice(price);
+        this.baseProduct.setPrice(price);
     }
 
     @Override
     public void setInventory(long amount) {
-        this.setInventory(amount);
+        this.baseProduct.setInventory(amount);
 
     }
 
     @Override
     public void setTitle(String title) {
-        this.setTitle(title);
+        this.baseProduct.setTitle(title);
     }
 
     @Override
     public String getTitle() {
-        return this.getTitle();
+        return this.baseProduct.getTitle();
     }
 
     @Override
     public void addInventory(long amount) {
-        this.addInventory(amount);
+        this.baseProduct.addInventory(amount);
     }
 
     @Override
     public void removeInventory(long amount) throws Exception {
-
+        this.baseProduct.removeInventory(amount);
     } // do we need an if statement here?
 
     @Override
     public float getWeight() {
-        return this.getWeight();
+        return this.weight;
     }
 
     @Override
     public int getMaxSpeed() {
-        return this.getMaxSpeed();
+        return this.maxSpeed;
     }
 
     @Override
     public void setWeight(float weight) {
-        this.setWeight(weight);
+        this.weight = weight;
     }
 
     @Override
     public void setMaxSpeed(int speed) {
-        this.setMaxSpeed(speed);
+        this.maxSpeed = speed;
     }
 
     @Override
